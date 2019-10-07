@@ -4,7 +4,7 @@
         <title>Kinklist</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMTAvMjEvMTV5ehY1AAAAZElEQVQ4jaWTwQ3AIAwDbcT+I9f9hjYQA/mAkO7igKAACWdFAF0A2gb0hP0uCyTATyAJSoaK5xGyEmTC9lktmORUdAQvBQ5cJshktoDk0HkmKRNUEmuE6ztYVXe7bT+jW7z9zi8qYiodCjCHKgAAAABJRU5ErkJggg==">
         <style>
             body {
@@ -514,12 +514,12 @@
             <button id="Edit"></button>
             <h1>Kink list</h1>
             <div class="legend">
+                <div><span data-color="#FFFFFF" class="choice notEntered"></span> <span class="legend-text">Not Entered</span></div>
                 <div><span data-color="#6DB5FE" class="choice favorite"></span> <span class="legend-text">Favorite</span></div>
                 <div><span data-color="#23FD22" class="choice like"></span> <span class="legend-text">Like</span></div>
                 <div><span data-color="#FDFD6B" class="choice okay"></span> <span class="legend-text">Okay</span></div>
                 <div><span data-color="#DB6C00" class="choice maybe"></span> <span class="legend-text">Maybe</span></div>
-                <div><span data-color="#920000" class="choice no"></span> <span class="legend-text">No / N/A</span></div>
-                <div><span data-color="#CC99CC" class="choice try"></span> <span class="legend-text">Want To Try</span></div>
+                <div><span data-color="#920000" class="choice no"></span> <span class="legend-text">No</span></div>
             </div>
             <div id="ExportWrapper">
                 <input type="text" id="URL">
@@ -531,7 +531,20 @@
         </div>
         <div id="EditOverlay" class="overlay">
             <textarea id="Kinks">
-#Clothing
+#Bodies
+(General)
+* Skinny
+* Chubby
+* Tall
+* Short
+* Small breasts
+* Large breasts
+* Small cocks
+* Large cocks
+* Cock piercings
+* Pussy / clit piercings
+
+#Clothing / Appearance
 (Self, Partner)
 * Clothed sex
 * Lingerie
@@ -541,29 +554,25 @@
 * Latex
 * Uniform / costume
 * Cross-dressing
+* Makeup - light
+* Makeup - heavy
 
-#Partners: 1 on 1
-(Top/Dom, Bottom/Sub, Vers/Switch)
-* 1 male
-* 1 female
-* 1 transfemale
-* 1 transmale
-* Anything 1 on 1
-
-#Partners: Groups
-(Top/Dom, Bottom/Sub, Vers/Switch)
-* 2 males
-* 2 females
-* 1 male, 1 female
-* 2 transfemales
-* 2 transmales
-* 1 transmale, 1 transfemale
-* Anything Group
+#Groupings
+(General)
+* You and 1 male
+* You and 1 female
+* You and MtF trans
+* You and FtM trans
+* You and 1 male, 1 female
+* You and 2 males
+* You and 2 females
 * Orgy
+* Gangbang
 
 #General
 (Giving, Receiving)
 * Romance / Affection
+* Massage
 * Handjob / fingering
 * Blowjob
 * Deep throat
@@ -571,11 +580,9 @@
 * Facials
 * Cunnilingus
 * Face-sitting
+* Face-fucking
 * Edging
 * Teasing
-* Mastrubation Instructions(JOI/SI)
-* PIV
-* PIA
 
 #Ass play
 (Giving, Receiving)
@@ -584,6 +591,7 @@
 * Rimming
 * Double penetration
 * Anal fisting
+* Ass to mouth
 
 #Restrictive
 (Self, Partner)
@@ -591,6 +599,7 @@
 * Collar
 * Leash
 * Chastity
+* Blindfold
 * Bondage (Light)
 * Bondage (Heavy)
 * Encasement
@@ -601,47 +610,39 @@
 * Plugs
 * Vibrators
 * Sounding
-                                
-#Sensations
-(Giving, Receiving)
-* Light pain
-* Heavy pain
-* Nipple clamps
-* Clothes pins
-* Caning
-* Flogging
-* Beating
-* Spanking
-* Cock/Pussy pain(light)
-* Cock/Pussy pain(heavy)
-* Hot Wax
-* Scratching
-* Biting
-* Cutting  
-* Slapping
-* Ice 
-* Feathers
-* Head Petting/Stroking Hair
+* Fucking machine / Sybian
 
 #Domination
-(Giving, Receiving)
-* Domination
-* Submission
+(Dominant, Submissive)
+* Dominant / Submissive
+* Choking (hand on throat)
+* Choking (on cock/toys)
+* Face slapping
+* Slut training
+* Maledom
+* Femdom
 * Domestic servitude
 * Slavery
 * Pet play
-* DD/lg
-* DD/lb
-* MD/lg
-* MD/lb
+* DD/lg, MD/lb
 * Discipline
 * Begging
 * Forced orgasm
 * Orgasm control
 * Orgasm denial
 * Power exchange
+* Vaginal gaping
+* Anal gaping
+* Hair pulling
 
-#No consent
+#Photos/videos
+(General)
+* Watching porn with partner(s)
+* Filming
+* Sending
+* Receiving
+
+#Risk Aware Consensual Kink
 (Aggressor, Target)
 * Non-con / rape
 * Blackmail / coercion
@@ -653,10 +654,48 @@
 (General)
 * Incest
 * Ageplay
-* Interracial / Raceplay
+* Raceplay
+* Bestiality
+* Necrophilia
 * Cheating
 * Exhibitionism
 * Voyeurism
+
+#Positions/Acts
+(General)
+* Missionary
+* 69
+* Doggy
+* Cowgirl
+* Seesaw (standing)
+* Piledriver
+* Full nelson
+* Wheelbarrow
+* The Om (both sitting)
+* Rusty trombone
+* Spit roast
+* Road head
+* ATM
+* Mutual masturbation
+* Food play
+
+#Fluids
+(General)
+* Spit
+* Bukakke
+* Blood
+* Watersports
+* Scat
+* Lactation
+* Diapers
+* Cum play
+
+#Degradation
+(Giving, Receiving)
+* Glory hole
+* Name calling
+* Slut shaming
+* Humiliation
 
 #Surrealism
 (Self, Partner)
@@ -667,86 +706,39 @@
 * Tentacles
 * Monster or Alien
 
-#Fluids
-(Giving,Receiving)
-* Blood
-* Watersports
-* Scat
-* Lactation
-* Cum play
-
-#Degradation
-(Giving, Receiving)
-* Name calling
-* Humiliation
-* Genitalia Mockery
-* Slut Shaming
-* Body Shaming
-* Gender Stereotypes
-
 #Touch & Stimulation
-(Giving, Receiving)
+(Actor, Subject)
 * Cock/Pussy worship
 * Ass worship
 * Foot play
 * Tickling
 * Sensation play
 * Electro stimulation
+* Erotic massage
 
 #Misc. Fetish
 (Giving, Receiving)
 * Fisting
-* Gangbang
 * Breath play
-* Impregnation
-* Pregnancy
-* Feminization
+* Body writing
 * Cuckold / Cuckquean
-* Fire play
-* Food play
-* Hair pulling           
-* Crying 
-* Glory hole
-* Body Writing
-* Bimboification
-* Forniphilia
-* Diapers
-* Knife Play
-* Spitting
+* Bimbofication
 
-#Aftercare
+#Sensations
 (Giving, Receiving)
-* Cuddling
-* Snacks
-* Sex
-* TV
-* Food
-* Other
-
-#Sharing Photos/Videos
-(Capturing, Modeling)
-* Ass
-* Genitalia
-* Face
-* Full Body(Clothed)
-* Full Body(Unclothed)
-* Feet
-* Other
-                
-#Bodies
-(General)
-* Skinny
-* Chubby
-* Fat
-* Small breasts
-* Medium breasts
-* Large breasts
-* Small cocks
-* Medium cocks
-* Large cocks
-
-
-              
+* Light pain
+* Heavy pain
+* Nipple clamps
+* Clothes pins
+* Caning
+* Flogging
+* Spanking
+* Hot Wax
+* Cock/Pussy slapping
+* Cock/Pussy torture
+* Slapping
+* Scratching
+* Flesh hooks
             </textarea>
             <button id="KinksOK">Accept</button>
         </div>
@@ -763,7 +755,7 @@
             </div>
         </div>
         <script>
-		
+            
             var log = function(val, base) {
                 return Math.log(val) / Math.log(base);
             };
@@ -796,8 +788,8 @@
             };
             
             var kinks = {};
-            var inputKinks = {};
-            var colors = {};
+            var inputKinks = {}
+            var colors = {}
             var level = {};
             
             $(function(){
@@ -963,11 +955,11 @@
                         context.fillStyle = '#000000';
                         
                         var levels = Object.keys(colors);
-                        var x = context.canvas.width - 15 - (120 * levels.length);                      
+                        var x = context.canvas.width - 15 - (120 * levels.length);
                         for(var i = 0; i < levels.length; i++) {
                             context.beginPath();
                             context.arc(x + (120 * i), 17, 8, 0, 2 * Math.PI, false);
-							context.fillStyle = colors[levels[i]];
+                            context.fillStyle = colors[levels[i]];
                             context.fill();
                             context.strokeStyle = 'rgba(0, 0, 0, 0.5)'
                             context.lineWidth = 1;
@@ -1023,7 +1015,7 @@
                             var x = drawCall.x + 5 + (drawCall.data.choices.length * 20);
                             var y = drawCall.y - 6;
                             context.fillText(drawCall.data.text, x, y);
-							
+                            
                             // Circles
                             for(var i = 0; i < drawCall.data.choices.length; i++){
                                 var choice = drawCall.data.choices[i];
@@ -1034,7 +1026,7 @@
                                 
                                 context.beginPath();
                                 context.arc(x, y, 8, 0, 2 * Math.PI, false);
-								context.fillStyle = color;
+                                context.fillStyle = color;
                                 context.fill();
                                 context.strokeStyle = 'rgba(0, 0, 0, 0.5)'
                                 context.lineWidth = 1;
@@ -1168,7 +1160,7 @@
                             }
                         }
                         
-                        // return $(canvas).insertBefore($('#InputList'));
+                        //return $(canvas).insertBefore($('#InputList'));
                         
                         // Send canvas to imgur
                         $.ajax({
@@ -1182,7 +1174,8 @@
                             data: {
                                 // convert the image data to base64
                                 image:  canvas.toDataURL().split(',')[1],
-                                type: 'base64'
+                                type: 'base64',
+                                album: 'QocfIA8YuTpSxHB'
                             },
                             success: function(result) {
                                 $('#Loading').hide();
@@ -1417,8 +1410,8 @@
                     var color = $choice.data('color');
                     var cssClass = this.className.replace('choice ', '').trim();
                     
-					addCssRule('.choice.' + cssClass, 'background-color: ' + color + ';');
-					colors[text] = color;
+                    addCssRule('.choice.' + cssClass, 'background-color: ' + color + ';');
+                    colors[text] = color;
                     level[text] = cssClass;
                 });
         
